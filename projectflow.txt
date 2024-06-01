@@ -1,1 +1,26 @@
-1. Projectflow added
+1. Create git repo and clone it in local.
+2. create code.py and add code to it. (it will save a csv file to a new "data" folder)
+
+
+
+
+
+
+**Extension - DVC has to be installed**
+dvc init (creates .dvcignore, .dvc)
+<locate dvc to global if any error thrown>
+--------------------------------------------------
+mkdir %temp%/dvcstore   or   mkdir temp
+dvc remote add -d myremote %temp%/dvcstore    or    dvc remote add -d myremote temp
+--------------------------------------------------
+dvc add data/ (creates data.dvc)
+git add .gitignore data.dvc
+dvc status - git status
+dvc commit
+dvc status - git status
+dvc push
+git checkout <hash> - git checkout master
+dvc pull
+
+
+try dvc install
