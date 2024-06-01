@@ -8,7 +8,8 @@
    Now it will ask to do: ("git rm -r --cached 'data'" and "git commit -m "stop tracking data"")
    Because initially we were tracking data/ folder from git so now we remove it for DVC to handle.
 8. Again we do "dvc add data/" (creates data.dvc) then "git add .gitignore data.dvc"
-9.
+9. Now - "dvc commit" and then "dvc push"
+9. Do a git add-commit-push to mark this stage as first version of data.
 
 
 
@@ -22,8 +23,7 @@ dvc remote add -d myremote %temp%/dvcstore    or    dvc remote add -d myremote t
 --------------------------------------------------
 dvc add data/ (creates data.dvc)
 git add .gitignore data.dvc
-dvc status - git status
-dvc commit
+dvc commit - dvc push
 dvc status - git status
 dvc push
 git checkout <hash> - git checkout master
