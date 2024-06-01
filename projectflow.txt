@@ -30,6 +30,7 @@ git add .gitignore data.dvc
 dvc commit - dvc push
 dvc status - git status
 dvc push
+git log --oneline
 git checkout <hash> - git checkout master
 dvc pull
 
