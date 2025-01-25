@@ -1,3 +1,7 @@
+import sys
+print("Python executable:", sys.executable)
+print("Python version:", sys.version)
+
 import pandas as pd
 import os
 
@@ -20,7 +24,6 @@ df = pd.DataFrame(data)
 # Ensure the "data" directory exists at the root level
 data_dir = 'data'
 os.makedirs(data_dir, exist_ok=True)
-
 # Define the file path
 file_path = os.path.join(data_dir, 'sample_data.csv')
 
